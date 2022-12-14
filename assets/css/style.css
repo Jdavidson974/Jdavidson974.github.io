@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 100vh;
+    grid-gap: 30px;
+    grid-template-areas:
+        "ja ja vio"
+        "ro ve vio"
+        "ro rs rs"
+    ;
+}
+
+div:nth-child(1) {
+    grid-area: ja;
+    background: yellow;
+}
+
+div:nth-child(2) {
+    grid-area: vio;
+    background: purple;
+}
+
+div:nth-child(3) {
+    grid-area: ve;
+    background: green;
+}
+
+div:nth-child(4) {
+    grid-area: ro;
+    background: red;
+}
+
+div:nth-child(5) {
+    grid-area: rs;
+    background: pink;
+}
